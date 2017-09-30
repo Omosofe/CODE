@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{> head }}
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<style></style>
+</head>
+<body>
+{{> support-nav }}
+
+
+
+	<section class="hero is-info is-bold">
+	  <!-- Hero content: will be in the middle -->
+	  <div class="hero-body">
+	    <div class="container">
+
+<!-- 	      <h1 class="title">
+	        Welcome
+	      </h1>
+	      <h2 class="subtitle">
+	        John Doe
+	      </h2> -->
+      <div class="columns is-mobile is-centered">
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+			<form action="/support" method="put">
+
+				<div class="control has-icons-left">
+				  <div class="select">
+				    <select>
+				      <option value="" selected>Select Topic</option>
+				      <option value="question" name="question">Question</option>
+				      <option  value="issue" name="issue">Issue</option>
+				      <option value="suggestion" name="suggestion">Suggestion</option>
+				    </select>
+				  </div>
+				  <span class="icon is-left">
+				    <i class="fa fa-question"></i>
+				  </span>
+				</div>
+
+				<div class="field has-addons">
+				  <div class="control">
+				  	<textarea class="textarea is-primary" placeholder="message body" name="message_body"></textarea>
+				  </div>
+				</div>
+
+				<div class="field">
+					<div class="control">
+					<input type="submit" class="button is-success">
+					</div>
+				</div>
+			</form>
+      </div>
+	    </div>
+	  </div>
+
+	  <!-- Hero footer: will stick at the bottom -->
+	  <div class="hero-foot">
+	  </div>
+	</section>
+
+
+
+<!-- <div class="section">
+      <div class="columns is-mobile is-centered">
+
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+          <div class="bd-notification is-info">
+            <span class="icon is-small">
+			  <i class="fa fa-user"></i>
+			</span>
+            
+			<p><b>Sender:</b> Admin</p>
+
+			<p><b>Message Tagline:</b> {{ account.chat.question }}{{ account.chat.issue }}{{ account.chat.suggestion }}</p>
+
+			<p><b>Outbox: </b> {{ account.chat.outbox }}</p>
+	       </div>
+      </div>
+ 
+    </div>
+</div> -->
+
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.nav-toggle'), 0);
+
+  // Check if there are any nav burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+{{> footer-script }}

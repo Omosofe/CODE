@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{> head }}
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<style></style>
+</head>
+<body>
+
+	<section class="hero is-primary is-fullheight is-bold">
+	  <!-- Hero header: will stick at the top -->
+	  <div class="hero-head is-small">
+	    <header class="nav">
+	      <div class="container">
+	        <div class="nav-left">
+	          <a href="/" class="nav-item">
+	            {{> logo-src}}
+	          </a>
+	        </div>
+	        <span class="nav-toggle">
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	        </span>
+	        <div class="nav-right nav-menu">
+	          <a href="#" class="nav-item is-active">
+	            Welcome
+	          </a>
+	          <a href="/privacy-terms" class="nav-item">
+	            Terms Of Privacy
+	          </a>
+	          <a href="/rules" class="nav-item">
+	            Rules
+	          </a>
+	          <span class="nav-item">
+	            <a href="/testimonies" class="button is-warning is-outlined">
+	              <span class="icon">
+	                <i class="fa fa-users"></i>
+	              </span>
+	              <span>Testimonies</span>
+	            </a>
+	          </span>
+	        </div>
+	      </div>
+	    </header>
+	  </div>
+
+
+
+	  <!-- Hero content: will be in the middle -->
+	  <div class="hero-body">
+	    <div class="container has-text-centered">
+	    </div>
+	    <div class="container has-text-centered">
+			<div class="field is-grouped">
+			  <p class="control">
+			    <a href="/signin" class="button is-large is-info is-outlined is-inverted">
+			      Signin
+			    </a>
+			  </p>
+			  <p class="control">
+			    <a href="/signup" class="button is-large is-success is-inverted is-outlined">
+			      Signup
+			    </a>
+			  </p>
+			</div>
+	    </div>
+	  </div>
+
+
+
+	  <!-- Hero footer: will stick at the bottom -->
+<!-- 	  <div class="hero-foot">
+	    <nav class="tabs">
+	      <div class="container">
+	        <ul>
+	          <li class="is-active"><a>Overview</a></li>
+	          <li><a>Modifiers</a></li>
+	          <li><a>Grid</a></li>
+	          <li><a>Elements</a></li>
+	          <li><a>Components</a></li>
+	          <li><a>Layout</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+	  </div> -->
+	</section>
+
+
+
+{{> footer-script }}

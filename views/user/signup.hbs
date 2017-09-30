@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{> head }}
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<style></style>
+</head>
+<body>
+
+	<section class="hero is-primary is-fullheight is-bold">
+
+
+
+	  <!-- Hero content: will be in the middle -->
+	  <div class="hero-body">
+	    <div class="container">
+
+		  <div class="columns is-centered">
+          <div class="column is-one-third is-centered is-success">
+
+			<form action="/signup" method="post">
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="email" placeholder="Your email">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      email
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="password" name="password" placeholder="Your password">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      password
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field">
+					<div class="control">
+					<input type="submit" class="button is-success">
+					</div>
+				</div>
+			</form>
+
+		</div>
+		</div>
+
+			<div class="container">
+				<div class="columns is-centered">
+				<div class="column is-one-third">
+					  <a href="/" class="tag is-delete">Go Back Home</a>
+				</div>
+				</div>
+			</div>
+
+	    </div>
+	  </div>
+
+
+
+	  <!-- Hero footer: will stick at the bottom -->
+	  <div class="hero-foot">
+	  </div>
+	</section>
+
+
+
+{{> footer-script }}

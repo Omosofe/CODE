@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{> head }}
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<style></style>
+</head>
+<body>
+
+	<section class="hero is-success is-fullheight is-bold">
+
+
+
+	  <!-- Hero content: will be in the middle -->
+	  <div class="hero-body">
+	    <div class="container">
+
+		  <div class="columns is-centered">
+          <div class="column is-one-third is-centered is-success">
+
+			<form action="/userinfo" method="post">
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="user_name" placeholder="User Name">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      User Name
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="full_name" placeholder="Full Name">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      Full Name
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="phone_number" placeholder="Phone Number">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      Phone Number
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="address" placeholder="Address">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      Address
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field has-addons">
+				  <p class="control">
+				    <input class="input" type="text" name="state" placeholder="State">
+				  </p>
+				  <p class="control">
+				    <a class="button is-static">
+				      State
+				    </a>
+				  </p>
+				</div>
+
+				<div class="field">
+					<div class="control">
+					<input type="submit" class="button is-primary">
+					</div>
+				</div>
+			</form>
+
+		</div>
+		</div>
+
+			<div class="container">
+				<div class="columns is-centered">
+				<div class="column is-one-third">
+					  <a href="/" class="tag is-delete">Go Back Home</a>
+				</div>
+				</div>
+			</div>
+
+	    </div>
+	  </div>
+
+
+
+{{> footer-script }}
